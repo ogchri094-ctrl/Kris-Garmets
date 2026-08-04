@@ -130,5 +130,16 @@
       "M",
       "L"
     ]
+  },
+  {
+    "id": 2,
+    "nombre": "Sudadera Michael Anillos",
+    "precio": "$1600",
+    "imagen": "sudaderamichaelanillos.jpeg",
+    "tallas": [
+      "M",
+      "L",
+      "XL"
+    ]
   }
 ]
