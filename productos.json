@@ -120,5 +120,15 @@
       "M",
       "L"
     ]
+  },
+  {
+    "id": 1,
+    "nombre": "Sudadera Jordan Brooklyn",
+    "precio": "$1600",
+    "imagen": "sudaderabrooklyn.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
   }
 ]
