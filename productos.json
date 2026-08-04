@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1785877588965,
+    "nombre": "Sudadera Jordan Gris",
+    "precio": "$1600",
+    "imagen": "SudaderaGris.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785878875847,
+    "nombre": "Conjunto AX Blanco",
+    "precio": "$3,000",
+    "imagen": "conjuntoaxb.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": 1785880148967,
+    "nombre": "Sudadera Jordan Periodico",
+    "precio": "$1200",
+    "imagen": "sudaderaperiodico.jpeg",
+    "tallas": [
+      "M"
+    ]
+  },
+  {
+    "id": 1785880739647,
+    "nombre": "Sudadera Coach Cafe",
+    "precio": "$2250",
+    "imagen": "sudaderacoach.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785880922113,
+    "nombre": "Conjunto AX Negro",
+    "precio": "$3000",
+    "imagen": "conjuntoaxnegro.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785881004314,
+    "nombre": "Sudadera Coach Negra ",
+    "precio": "$2250",
+    "imagen": "sudaderacoachnegra.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785881118729,
+    "nombre": "Camiste Jordan BasquetBall",
+    "precio": "$1600",
+    "imagen": "playerajordantirantes.jpeg",
+    "tallas": [
+      "S"
+    ]
+  },
+  {
+    "id": 1785881182915,
+    "nombre": "Short Confeti",
+    "precio": "$1050",
+    "imagen": "shortconfeti.jpeg",
+    "tallas": [
+      "S"
+    ]
+  },
+  {
+    "id": 1785881245666,
+    "nombre": "Playera Jordan Blanco",
+    "precio": "$900",
+    "imagen": "playerajordanblanca.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785881326861,
+    "nombre": "Playera Anillos",
+    "precio": "$1100",
+    "imagen": "playeraanillos2.jpeg",
+    "tallas": [
+      "S"
+    ]
+  },
+  {
+    "id": 1785881826802,
+    "nombre": "Sudadera Jordan Viento",
+    "precio": "$1700",
+    "imagen": "sudaderajordanviento.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 1785881863990,
+    "nombre": "Sudadera Jordan Angeles",
+    "precio": "$1600",
+    "imagen": "sudaderajordanangeles.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  }
+]

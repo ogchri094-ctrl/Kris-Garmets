@@ -1,0 +1,123 @@
+.zap{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.track{
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+}
+
+.track img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.zap{
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.track{
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+}
+
+.track img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+.tabla {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estructura básica de la tabla */
+table, td {
+    border: 1px solid #999;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: top; /* Alinea el contenido arriba para que todo cuadre parejo */
+    width: 150px;       /* Ancho fijo opcional para que todas las columnas midan lo mismo */
+}
+
+/* Control estricto del tamaño de las imágenes (Fila 1) */
+td img {
+    display: block;
+    width: 120px;       /* Ajusta este ancho a tu gusto */
+    height: 120px;      /* Mismo alto para que sean perfectamente cuadradas */
+    object-fit: cover;  /* Evita que las imágenes se distorsionen o estiren */
+    margin: 10px auto 0 auto; /* Las centra y les da separación del texto del mes */
+}
+
+/* Estilo para los textos de precios (Fila 2) */
+.precio {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #b40000;
+    line-height: 1.4;
+}
+
+.precio strong {
+    color: #e74c3c; /* Color rojo/llamativo para el precio */
+}
+
+
+
+.color-1 {
+    color: brown;
+    font-weight:bold ;
+}
+
+.color-4 {
+
+    color: rgb(0, 90, 168);
+}
+
+
+.color-2 {
+    color: rgb(119, 65, 0);
+}
+
+.color-3 {
+    color: black;
+}
+

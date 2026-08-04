@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f5f7; padding: 20px; color: #111; }
+    .box { max-width: 600px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h1 { font-size: 1.4rem; margin-bottom: 15px; border-bottom: 2px solid #111; padding-bottom: 8px; }
+    .campo { margin-bottom: 12px; }
+    label { display: block; font-weight: bold; font-size: 0.85rem; margin-bottom: 4px; }
+    input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+    .btn-add { background: #111; color: #fff; }
+    .btn-save { background: #25d366; color: #fff; margin-top: 20px; font-size: 1rem; }
+    .item { background: #f9f9f9; border: 1px solid #ddd; padding: 10px; margin-top: 8px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+    .btn-del { width: auto; background: #dc3545; color: #fff; padding: 4px 8px; margin: 0; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>PANEL DE CONTROL</h1>
+
+  <div class="campo">
+    <label>1. Cargar productos.json (si ya tienes uno):</label>
+    <input type="file" accept=".json" onchange="cargarJSON(event)">
+  </div>
+
+  <hr style="margin: 15px 0;">
+
+  <h2>2. Agregar Prenda</h2>
+  <form id="form-prenda">
+    <div class="campo">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" placeholder="ej. Playera Oversize Black" required>
+    </div>
+    <div class="campo">
+      <label>Precio:</label>
+      <input type="text" id="precio" placeholder="ej. $450 MXN" required>
+    </div>
+    <div class="campo">
+      <label>Ruta de la Imagen:</label>
+      <input type="text" id="imagen" placeholder="ej. imagenes/playera1.jpg" required>
+    </div>
+    <div class="campo">
+      <label>Tallas (separadas por coma):</label>
+      <input type="text" id="tallas" placeholder="ej. Chica (S), Mediana (M), Grande (L)" required>
+    </div>
+    <button type="submit" class="btn-add">Agregar a la lista</button>
+  </form>
+
+  <hr style="margin: 20px 0;">
+
+  <h2>3. Lista de Prendas (<span id="cant">0</span>)</h2>
+  <div id="lista"></div>
+
+  <button class="btn-save" onclick="guardarJSON()">Guardar y Descargar productos.json</button>
+</div>
+
+<script>
+  let inventario = [];
+
+  function cargarJSON(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(evt) {
+      inventario = JSON.parse(evt.target.result);
+      actualizarVista();
+    };
+    reader.readAsText(file);
+  }
+
+  document.getElementById('form-prenda').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const item = {
+      id: Date.now(),
+      nombre: document.getElementById('nombre').value,
+      precio: document.getElementById('precio').value,
+      imagen: document.getElementById('imagen').value,
+      tallas: document.getElementById('tallas').value.split(',').map(t => t.trim())
+    };
+    inventario.push(item);
+    actualizarVista();
+    this.reset();
+  });
+
+  function borrarItem(id) {
+    inventario = inventario.filter(i => i.id !== id);
+    actualizarVista();
+  }
+
+  function actualizarVista() {
+    const divLista = document.getElementById('lista');
+    document.getElementById('cant').innerText = inventario.length;
+    divLista.innerHTML = '';
+    inventario.forEach(i => {
+      divLista.innerHTML += `
+        <div class="item">
+          <div>
+            <strong>${i.nombre}</strong> - ${i.precio}<br>
+            <small>${i.imagen} | Tallas: ${i.tallas.join(', ')}</small>
+          </div>
+          <button class="btn-del" onclick="borrarItem(${i.id})">X</button>
+        </div>
+      `;
+    });
+  }
+
+  function guardarJSON() {
+    if (inventario.length === 0) {
+      alert("Agrega al menos una prenda antes de guardar.");
+      return;
+    }
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(inventario, null, 2));
+    const a = document.createElement('a');
+    a.href = dataStr;
+    a.download = "productos.json";
+    a.click();
+  }
+</script>
+
+</body>
+</html>
