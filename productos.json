@@ -1,15 +1,5 @@
 [
   {
-    "id": 1785877588965,
-    "nombre": "Sudadera Jordan Gris",
-    "precio": "$1600",
-    "imagen": "SudaderaGris.jpeg",
-    "tallas": [
-      "M",
-      "L"
-    ]
-  },
-  {
     "id": 8,
     "nombre": "Conjunto Michael Kors Negro",
     "precio": "$3200",
@@ -119,6 +109,16 @@
     "nombre": "Playera Jordan Blanco",
     "precio": "$900",
     "imagen": "playerajordanblanca.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+   {
+    "id": 1785877588965,
+    "nombre": "Sudadera Jordan Gris",
+    "precio": "$1600",
+    "imagen": "SudaderaGris.jpeg",
     "tallas": [
       "M",
       "L"
