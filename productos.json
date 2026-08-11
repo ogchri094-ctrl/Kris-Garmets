@@ -166,16 +166,6 @@
     ]
   },
   {
-    "id": 1,
-    "nombre": "Sudadera Jordan Brooklyn",
-    "precio": "$1600",
-    "imagen": "sudaderabrooklyn.jpeg",
-    "tallas": [
-      "M",
-      "L"
-    ]
-  },
-  {
     "id": 2,
     "nombre": "Sudadera Michael Anillos",
     "precio": "$1600",
