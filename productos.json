@@ -10,6 +10,30 @@
     ]
   },
   {
+    "id": 8,
+    "nombre": "Conjunto Michael Kors Negro",
+    "precio": "$3200",
+    "imagen": "michaelkorsnegro.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
+    "id": 1,
+    "nombre": "Conjunto Michael Kors Azul",
+    "precio": "$3200",
+    "imagen": "conjuntomkazul.jpeg",
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  },
+  {
     "id": 1785878875847,
     "nombre": "Conjunto AX Blanco",
     "precio": "$3,000",
@@ -22,6 +46,26 @@
     ]
   },
   {
+    "id": 9,
+    "nombre": "Sudadera Jordan Brooklyn",
+    "precio": "$1600",
+    "imagen": "sudaderabrooklyn.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+ {
+    "id": 10,
+    "nombre": "Pants Jordan Brooklyn 23",
+    "precio": "$1700",
+    "imagen": "pantsjordanverde23.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+  {
     "id": 1785880148967,
     "nombre": "Sudadera Jordan Periodico",
     "precio": "$1200",
@@ -31,10 +75,10 @@
     ]
   },
   {
-    "id": 1785880739647,
-    "nombre": "Sudadera Coach Cafe",
-    "precio": "$2250",
-    "imagen": "sudaderacoach.jpeg",
+    "id": 1785880922113,
+    "nombre": "Conjunto AX Negro",
+    "precio": "$3000",
+    "imagen": "conjuntoaxnegro.jpeg",
     "tallas": [
       "S",
       "M",
@@ -42,10 +86,10 @@
     ]
   },
   {
-    "id": 1785880922113,
-    "nombre": "Conjunto AX Negro",
-    "precio": "$3000",
-    "imagen": "conjuntoaxnegro.jpeg",
+    "id": 1785881004314,
+    "nombre": "Sudadera Coach Negra ",
+    "precio": "$2250",
+    "imagen": "sudaderacoachnegra.jpeg",
     "tallas": [
       "S",
       "M",
@@ -129,6 +173,44 @@
       "M",
       "L",
       "XL"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Sueter Lacoste",
+    "precio": "$2200",
+    "imagen": "grislacoste.jpeg",
+    "tallas": [
+      "M"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Nike Romppevientos",
+    "precio": "$2500",
+    "imagen": "conjuntonikerompevientos.jpeg",
+    "tallas": [
+      "L"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Playera Graffiti Jordan",
+    "precio": "$1400",
+    "imagen": "playeragraffitimarron.jpeg",
+    "tallas": [
+      "M",
+      "L"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Sudadera Jordan Brooklyn Negra",
+    "precio": "$1700",
+    "imagen": "sudaderanegra23.jpeg",
+    "tallas": [
+      "M",
+      "L"
     ]
   }
 ]
